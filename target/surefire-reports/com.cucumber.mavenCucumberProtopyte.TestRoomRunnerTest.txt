@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: com.cucumber.mavenCucumberProtopyte.TestRoomRunnerTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 4, Skipped: 4, Time elapsed: 18.877 sec <<< FAILURE!
+When Navigate to "Adoption" page(Scenario: Selecting item in a dropdown list)  Time elapsed: 0.031 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.cucumber.mavenCucumberProtopyte.TestroomSteps.Navigate_to_page(TestroomSteps.java:29)
+	at ?.When Navigate to "Adoption" page(buttons.feature:5)
+
+Scenario: Selecting item in a dropdown list  Time elapsed: 0.033 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.cucumber.mavenCucumberProtopyte.TestroomSteps.Navigate_to_page(TestroomSteps.java:29)
+	at ?.When Navigate to "Adoption" page(buttons.feature:5)
+
+When Navigate to "Contact" page(Scenario: Selecting information on a Contact page)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.cucumber.mavenCucumberProtopyte.TestroomSteps.Navigate_to_page(TestroomSteps.java:29)
+	at ?.When Navigate to "Contact" page(buttons.feature:11)
+
+Scenario: Selecting information on a Contact page  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.cucumber.mavenCucumberProtopyte.TestroomSteps.Navigate_to_page(TestroomSteps.java:29)
+	at ?.When Navigate to "Contact" page(buttons.feature:11)
+
