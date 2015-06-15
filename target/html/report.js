@@ -22,7 +22,7 @@ formatter.match({
   "location": "StepsButtons.Homepage_should_be_opened()"
 });
 formatter.result({
-  "duration": 14076762814,
+  "duration": 10058142995,
   "status": "passed"
 });
 formatter.scenario({
@@ -43,6 +43,11 @@ formatter.step({
   "name": "Select \"First day of the next week\" from dropdown",
   "keyword": "Then "
 });
+formatter.step({
+  "line": 9,
+  "name": "Close browser",
+  "keyword": "And "
+});
 formatter.match({
   "arguments": [
     {
@@ -53,7 +58,7 @@ formatter.match({
   "location": "StepsButtons.Navigate_to_page(String)"
 });
 formatter.result({
-  "duration": 304767720,
+  "duration": 309850518,
   "status": "passed"
 });
 formatter.match({
@@ -66,7 +71,14 @@ formatter.match({
   "location": "TestroomSteps.Select_from_dropdown(String)"
 });
 formatter.result({
-  "duration": 992248798,
+  "duration": 868536175,
+  "status": "passed"
+});
+formatter.match({
+  "location": "StepsButtons.Close_browser()"
+});
+formatter.result({
+  "duration": 725906103,
   "status": "passed"
 });
 formatter.background({
@@ -85,16 +97,11 @@ formatter.match({
   "location": "StepsButtons.Homepage_should_be_opened()"
 });
 formatter.result({
-  "duration": 372112221,
-  "status": "passed"
+  "duration": 1228364,
+  "error_message": "org.openqa.selenium.remote.SessionNotFoundException: The FirefoxDriver cannot be used after quit() was called.\nBuild info: version: \u00272.46.0\u0027, revision: \u002761506a4624b13675f24581e453592342b7485d71\u0027, time: \u00272015-06-04 10:22:50\u0027\nSystem info: host: \u0027TDemeniuk-PC\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_45\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:389)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:578)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:843)\r\n\tat com.cucumber.mavenCucumberProtopyte.WebDriverSingleton.openBrowser(WebDriverSingleton.java:22)\r\n\tat com.cucumber.mavenCucumberProtopyte.StepsButtons.Homepage_should_be_opened(StepsButtons.java:24)\r\n\tat ✽.Given Homepage should be opened(buttons.feature:4)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
-  "comments": [
-    {
-      "line": 9,
-      "value": "#And Close browser"
-    }
-  ],
   "line": 11,
   "name": "Selecting information on a Contact page",
   "description": "",
@@ -112,6 +119,11 @@ formatter.step({
   "name": "Enter valid data into contact form selected fields",
   "keyword": "Then "
 });
+formatter.step({
+  "line": 14,
+  "name": "Close browser",
+  "keyword": "And "
+});
 formatter.match({
   "arguments": [
     {
@@ -122,15 +134,19 @@ formatter.match({
   "location": "StepsButtons.Navigate_to_page(String)"
 });
 formatter.result({
-  "duration": 208140687,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "TestroomSteps.Enter_valid_data_into_contact_form_selected_fields()"
 });
 formatter.result({
-  "duration": 2202220805,
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.match({
+  "location": "StepsButtons.Close_browser()"
+});
+formatter.result({
+  "status": "skipped"
 });
 formatter.uri("testroom.feature");
 formatter.feature({
@@ -156,8 +172,9 @@ formatter.match({
   "location": "StepsButtons.Homepage_should_be_opened()"
 });
 formatter.result({
-  "duration": 497828073,
-  "status": "passed"
+  "duration": 622200,
+  "error_message": "org.openqa.selenium.remote.SessionNotFoundException: The FirefoxDriver cannot be used after quit() was called.\nBuild info: version: \u00272.46.0\u0027, revision: \u002761506a4624b13675f24581e453592342b7485d71\u0027, time: \u00272015-06-04 10:22:50\u0027\nSystem info: host: \u0027TDemeniuk-PC\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_45\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:389)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:578)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:843)\r\n\tat com.cucumber.mavenCucumberProtopyte.WebDriverSingleton.openBrowser(WebDriverSingleton.java:22)\r\n\tat com.cucumber.mavenCucumberProtopyte.StepsButtons.Homepage_should_be_opened(StepsButtons.java:24)\r\n\tat ✽.Given Homepage should be opened(testroom.feature:4)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "line": 6,
@@ -177,6 +194,11 @@ formatter.step({
   "name": "Verify that title is \"Adoption\"",
   "keyword": "Then "
 });
+formatter.step({
+  "line": 9,
+  "name": "Close browser",
+  "keyword": "And "
+});
 formatter.match({
   "arguments": [
     {
@@ -187,8 +209,7 @@ formatter.match({
   "location": "StepsButtons.Navigate_to_page(String)"
 });
 formatter.result({
-  "duration": 291195420,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -200,8 +221,13 @@ formatter.match({
   "location": "TestroomSteps.Verify_that_title_is(String)"
 });
 formatter.result({
-  "duration": 3126396,
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.match({
+  "location": "StepsButtons.Close_browser()"
+});
+formatter.result({
+  "status": "skipped"
 });
 formatter.background({
   "line": 3,
@@ -219,16 +245,11 @@ formatter.match({
   "location": "StepsButtons.Homepage_should_be_opened()"
 });
 formatter.result({
-  "duration": 1016440195,
-  "status": "passed"
+  "duration": 656197,
+  "error_message": "org.openqa.selenium.remote.SessionNotFoundException: The FirefoxDriver cannot be used after quit() was called.\nBuild info: version: \u00272.46.0\u0027, revision: \u002761506a4624b13675f24581e453592342b7485d71\u0027, time: \u00272015-06-04 10:22:50\u0027\nSystem info: host: \u0027TDemeniuk-PC\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_45\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:389)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:578)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:843)\r\n\tat com.cucumber.mavenCucumberProtopyte.WebDriverSingleton.openBrowser(WebDriverSingleton.java:22)\r\n\tat com.cucumber.mavenCucumberProtopyte.StepsButtons.Homepage_should_be_opened(StepsButtons.java:24)\r\n\tat ✽.Given Homepage should be opened(testroom.feature:4)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
-  "comments": [
-    {
-      "line": 9,
-      "value": "#And Close browser"
-    }
-  ],
   "line": 11,
   "name": "Check page title for About page",
   "description": "",
@@ -246,6 +267,11 @@ formatter.step({
   "name": "Verify that title is \"About Zoo\"",
   "keyword": "Then "
 });
+formatter.step({
+  "line": 14,
+  "name": "Close browser",
+  "keyword": "And "
+});
 formatter.match({
   "arguments": [
     {
@@ -256,8 +282,7 @@ formatter.match({
   "location": "StepsButtons.Navigate_to_page(String)"
 });
 formatter.result({
-  "duration": 350094677,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -269,8 +294,13 @@ formatter.match({
   "location": "TestroomSteps.Verify_that_title_is(String)"
 });
 formatter.result({
-  "duration": 239258,
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.match({
+  "location": "StepsButtons.Close_browser()"
+});
+formatter.result({
+  "status": "skipped"
 });
 formatter.background({
   "line": 3,
@@ -288,16 +318,11 @@ formatter.match({
   "location": "StepsButtons.Homepage_should_be_opened()"
 });
 formatter.result({
-  "duration": 686041678,
-  "status": "passed"
+  "duration": 649140,
+  "error_message": "org.openqa.selenium.remote.SessionNotFoundException: The FirefoxDriver cannot be used after quit() was called.\nBuild info: version: \u00272.46.0\u0027, revision: \u002761506a4624b13675f24581e453592342b7485d71\u0027, time: \u00272015-06-04 10:22:50\u0027\nSystem info: host: \u0027TDemeniuk-PC\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_45\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:389)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:578)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:843)\r\n\tat com.cucumber.mavenCucumberProtopyte.WebDriverSingleton.openBrowser(WebDriverSingleton.java:22)\r\n\tat com.cucumber.mavenCucumberProtopyte.StepsButtons.Homepage_should_be_opened(StepsButtons.java:24)\r\n\tat ✽.Given Homepage should be opened(testroom.feature:4)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
-  "comments": [
-    {
-      "line": 14,
-      "value": "#And Close browser"
-    }
-  ],
   "line": 16,
   "name": "Check page title for Contact page",
   "description": "",
@@ -315,6 +340,11 @@ formatter.step({
   "name": "Verify that title is \"Contact\"",
   "keyword": "Then "
 });
+formatter.step({
+  "line": 19,
+  "name": "Close browser",
+  "keyword": "And "
+});
 formatter.match({
   "arguments": [
     {
@@ -325,8 +355,7 @@ formatter.match({
   "location": "StepsButtons.Navigate_to_page(String)"
 });
 formatter.result({
-  "duration": 239280840,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -338,7 +367,12 @@ formatter.match({
   "location": "TestroomSteps.Verify_that_title_is(String)"
 });
 formatter.result({
-  "duration": 190509,
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.match({
+  "location": "StepsButtons.Close_browser()"
+});
+formatter.result({
+  "status": "skipped"
 });
 });

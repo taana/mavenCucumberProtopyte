@@ -7,6 +7,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 
 
+
+import cucumber.api.java.After;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
@@ -33,11 +35,11 @@ public void closeWebBrowser(){
 	automation.closeBrowser();
 }
 
-	//@After()
-	//public void close(){
-		//automation.closeBrowser();
+	@After()
+	public void close(){
+		automation.closeBrowser();
 	
-
+	}
 	@And("^Close browser$")
 	public void Close_browser() throws Throwable {
 		closeWebBrowser();
